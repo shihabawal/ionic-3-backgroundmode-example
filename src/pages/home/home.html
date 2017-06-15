@@ -7,8 +7,15 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="stopBGMode()">Stop BG</button><br>
+  <button ion-button (click)="stopBGMode()">Stop BG</button>
+  <button ion-button (click)="startBGMode()">Start BG</button><br>
   <button ion-button (click)="checkBGMode()">Check BG</button><br>
   <label id="isActive"></label><br>
   <label id="isEnabled"></label>
+  <ion-list>
+  	<ion-item>
+  		<ion-label fixed>Seconds</ion-label>
+    	<ion-input [(ngModel)]="delayNum" type="number" value=""></ion-input>
+  	</ion-item>
+  </ion-list>
 </ion-content>

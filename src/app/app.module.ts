@@ -1,3 +1,4 @@
+import { AlarmPage } from '../pages/alarm/alarm';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -12,7 +13,8 @@ import { BackgroundMode } from '@ionic-native/background-mode';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    AlarmPage
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,8 @@ import { BackgroundMode } from '@ionic-native/background-mode';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    AlarmPage
   ],
   providers: [
     StatusBar,

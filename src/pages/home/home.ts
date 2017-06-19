@@ -19,7 +19,7 @@ export class HomePage {
   }
   
   ngAfterViewInit() {
-    this.worker = this.backGroundMode.on('enable').subscribe(() => this.alarmFunction());
+      this.worker = this.backGroundMode.on('enable').subscribe(() => this.alarmFunction());
 
       this.backGroundMode.on('deactivate').subscribe(() => {
         this.backGroundMode.disable();
